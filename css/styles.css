@@ -17,9 +17,22 @@ body {
 /* #endregion */
 
 /* #region Reset styles (скидання стилів) */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
 ol,
 ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -33,6 +46,12 @@ address {
 /* #endregion */
 
 /* #region Common styles (повторювані стилі)*/
+.container {
+  max-width: 1158px;
+  padding: 0 15px;
+  margin: auto;
+}
+
 .section-title {
   color: #2e2f42;
   text-align: center;
@@ -89,6 +108,10 @@ address {
 /* #endregion */
 
 /* #region Header */
+.header {
+  border-bottom: 1px solid #e7e9fc;
+}
+
 .header-item {
   font-size: 16px;
   font-weight: 500;

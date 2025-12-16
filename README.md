@@ -1,3 +1,3 @@
-# goit-markup-hw-02
+# goit-markup-hw-03
 
-HW 2 Тема 2. Вступ до CSS
+HW 3 Тема 3. Блокова модель. Flexbox
