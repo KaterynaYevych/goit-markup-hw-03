@@ -1,0 +1,147 @@
+/* #region Variables (задавати варіанти) */
+:root {
+}
+/* #endregion */
+
+/* #region Base styles (базови стилі для тегів)*/
+body {
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+  background-color: #ffffff;
+}
+/* #endregion */
+
+/* #region Reset styles (скидання стилів) */
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+address {
+  font-style: normal;
+}
+/* #endregion */
+
+/* #region Common styles (повторювані стилі)*/
+.section-title {
+  color: #2e2f42;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+}
+
+.item-title {
+  color: #2e2f42;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+}
+
+.btn {
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: #4d5ae5;
+  cursor: pointer;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: #404bbf;
+}
+/* #endregion */
+
+/* #region Logo */
+.logo {
+  color: #4d5ae5;
+  font-family: Raleway, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.light {
+  color: #f4f4fd;
+}
+
+.dark {
+  color: #2e2f42;
+}
+/* #endregion */
+
+/* #region Header */
+.header-item {
+  font-size: 16px;
+  font-weight: 500;
+  color: #2e2f42;
+}
+
+.header-item-link:hover,
+.header-item-link:focus {
+  color: #404bbf;
+}
+
+.contacts-item {
+  font-weight: 400;
+}
+
+.contacts-item-link:hover,
+.contacts-item-link:focus {
+  color: #404bbf;
+}
+/* #endregion */
+
+/* #region Hero */
+.hero {
+  background-color: #2e2f42;
+}
+
+.hero-title {
+  color: #ffffff;
+  text-align: center;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+}
+/* #endregion */
+
+/* #region Advantages */
+
+/* #endregion */
+
+/* #region Team */
+.team {
+  background-color: #f4f4fd;
+}
+
+.team-item {
+  background-color: #ffffff;
+}
+/* #endregion */
+
+/* #region Footer styles */
+.footer {
+  background-color: #2e2f42;
+}
+
+/* #endregion */
