@@ -1,9 +1,8 @@
 /* #region Variables (задавати варіанти) */
-:root {
-}
+
 /* #endregion */
 
-/* #region Base styles (базови стилі для тегів)*/
+/* #region Base styles */
 body {
   font-family: Roboto, sans-serif;
   font-size: 16px;
@@ -14,9 +13,23 @@ body {
   color: #434455;
   background-color: #ffffff;
 }
+
 /* #endregion */
 
 /* #region Reset styles (скидання стилів) */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  overflow: hidden;
+}
+
 h1,
 h2,
 h3,
@@ -46,10 +59,25 @@ address {
 /* #endregion */
 
 /* #region Common styles (повторювані стилі)*/
+h2 {
+  margin-bottom: 72px;
+}
+
+img {
+	display: block;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
 .container {
   max-width: 1158px;
   padding: 0 15px;
   margin: auto;
+}
+
+.section {
+  padding: 120px 0;
 }
 
 .section-title {
@@ -69,16 +97,28 @@ address {
   line-height: 1.2;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  margin-bottom: 8px;
 }
 
 .btn {
+  display: block;
   font-size: 16px;
   font-weight: 500;
-  color: #ffffff;
-  background-color: #4d5ae5;
   cursor: pointer;
   line-height: 1.5;
   letter-spacing: 0.04em;
+
+  color: #ffffff;
+  background-color: #4d5ae5;
+  border: none;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+
+  min-width: 169px;
+  height: 56px;
+
+  padding: 16px 32px;
+  border-radius: 4px;
+  margin: 0 auto;
 }
 
 .btn:hover,
@@ -105,6 +145,15 @@ address {
 .dark {
   color: #2e2f42;
 }
+
+.header-logo {
+  padding: 24px 0;
+  margin-right: 76px;
+}
+
+.footer-logo {
+  margin-bottom: 16px;
+}
 /* #endregion */
 
 /* #region Header */
@@ -112,23 +161,54 @@ address {
   border-bottom: 1px solid #e7e9fc;
 }
 
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.header-menu {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
 .header-item {
+  display: block;
   font-size: 16px;
   font-weight: 500;
   color: #2e2f42;
+  padding: 24px 0;
 }
 
-.header-item-link:hover,
-.header-item-link:focus {
+.header-item:hover,
+.header-item:focus {
   color: #404bbf;
+}
+
+.header-contacs {
+  margin-left: auto;
+}
+
+.contacts-list {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  gap: 40px;
 }
 
 .contacts-item {
   font-weight: 400;
+  display: block;
+  padding: 24px 0;
 }
 
-.contacts-item-link:hover,
-.contacts-item-link:focus {
+.contacts-item:hover,
+.contacts-item:focus {
   color: #404bbf;
 }
 /* #endregion */
@@ -136,20 +216,34 @@ address {
 /* #region Hero */
 .hero {
   background-color: #2e2f42;
+  width: 100%;
+  padding: 188px 0;
 }
 
 .hero-title {
   color: #ffffff;
+
   text-align: center;
   font-size: 56px;
   font-weight: 700;
   line-height: 1.07;
   letter-spacing: 0.02em;
+
+  max-width: 496px;
+  margin: 0 auto 48px;
 }
 /* #endregion */
 
 /* #region Advantages */
 
+.adv-list {
+  display: flex;
+  gap: 24px;
+}
+
+.adv-item {
+  flex-basis: calc((100% - 72px) / 4);
+}
 /* #endregion */
 
 /* #region Team */
@@ -157,14 +251,60 @@ address {
   background-color: #f4f4fd;
 }
 
+.team-list {
+  display: flex;
+  flex-basis: calc((100% - 72px) / 4)
+  align-items: center;
+  gap: 24px;
+}
+
 .team-item {
   background-color: #ffffff;
+  border-radius: 0 0 4px 4px;
+  box-shadow: 
+  0 2px 1px 0 rgba(46, 47, 66, 0.08), 
+  0 1px 1px 0 rgba(46, 47, 66, 0.16), 
+  0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
+
+.person {
+  margin: 32px 16px;
+  text-align: center;
+}
+/* #endregion */
+
+/* #region Portfolio */
+.portfolio-list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  row-gap: 48px;
+  column-gap: 24px;
+}
+
+.portfolio-item {
+  flex-basis: calc((100% - 48px) / 3);
+  border-bottom: 1px solid #E7E9FC;
+  align-items: stretch;
+}
+
+.portfolio-name {
+  padding: 32px 16px;
+  
+  border-left: 1px solid #E7E9FC;
+  border-right: 1px solid #E7E9FC;
 }
 /* #endregion */
 
 /* #region Footer styles */
 .footer {
   background-color: #2e2f42;
+  padding: 100px 0;
+}
+
+.footer-txt {
+  max-width: 264px;
+  margin-top: 16px;
 }
 
 /* #endregion */
