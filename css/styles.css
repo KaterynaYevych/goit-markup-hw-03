@@ -64,7 +64,7 @@ h2 {
 }
 
 img {
-	display: block;
+  display: block;
   max-width: 100%;
   height: auto;
   object-fit: cover;
@@ -212,14 +212,13 @@ img {
 }
 
 .contacts-item-link {
-    padding: 24px 0;
+  padding: 24px 0;
 }
 
 .contacts-item-link:hover,
 .contacts-item-link:focus {
   color: #404bbf;
 }
-
 
 /* #endregion */
 
@@ -263,7 +262,7 @@ img {
 
 .team-list {
   display: flex;
-  flex-basis: calc((100% - 72px) / 4)
+  flex-basis: calc((100% - 72px) / 4);
   align-items: center;
   gap: 24px;
 }
@@ -271,10 +270,8 @@ img {
 .team-item {
   background-color: #ffffff;
   border-radius: 0 0 4px 4px;
-  box-shadow: 
-  0 2px 1px 0 rgba(46, 47, 66, 0.08), 
-  0 1px 1px 0 rgba(46, 47, 66, 0.16), 
-  0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
 .person {
@@ -300,8 +297,8 @@ img {
 
 .portfolio-name {
   padding: 32px 16px;
-    border: 1px solid #e7e9fc;
-    border-top: none;
+  border: 1px solid #e7e9fc;
+  border-top: none;
 }
 /* #endregion */
 
