@@ -176,7 +176,6 @@ img {
   display: flex;
   align-items: center;
   gap: 40px;
-  padding: 24px 0;
 }
 
 .header-item {
@@ -184,11 +183,14 @@ img {
   font-size: 16px;
   font-weight: 500;
   color: #2e2f42;
+}
+
+.header-item-link {
   padding: 24px 0;
 }
 
-.header-item:hover,
-.header-item:focus {
+.header-item-link:hover,
+.header-item-link:focus {
   color: #404bbf;
 }
 
@@ -209,10 +211,16 @@ img {
   padding: 24px 0;
 }
 
-.contacts-item:hover,
-.contacts-item:focus {
+.contacts-item-link {
+    padding: 24px 0;
+}
+
+.contacts-item-link:hover,
+.contacts-item-link:focus {
   color: #404bbf;
 }
+
+
 /* #endregion */
 
 /* #region Hero */
